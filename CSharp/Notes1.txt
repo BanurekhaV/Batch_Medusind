@@ -1,0 +1,79 @@
+.NetFramework: is a software component that runs on windows operating system. 
+- It provides Tools, Libraries that enable software developers to build applications faster and easier. RAD tool
+
+Architecture of .Net Framework (CLS, FCL,CLR, Tools)
+
+Points to remember:
+ 1. IL(intermediate Language) is also called as MSIL/CIL, Managed Code
+ 2. Any Dotnet Application will be of either and .exe Assembly or .dll asembly
+    - An sssembly is a fundamental unit of deployment, version control, reuse and security for a .net application
+    - Assembly contains PE header, CLR Header, Manifest and IL
+    - Manifest files contain metatdata(data about data)
+    - Can be either private or public (GAC - Global Assembly Cache)
+    
+Visual Studio - IDE( Integrated Developement Environment)
+                Intellisense
+
+
+www.amazon.in      ---- IP address  (192.162.100.01)
+
+                                    (192.162.20.34)
+
+Domain           DNS    Physical machine
+
+
+C# - It is a modern general purpose object oriented programming language developed by Microsoft
+   - Anders Hejlsberg and his team during development of .Net Framework
+
+Namespace : A logical way to organise our programs
+            It is a collection of Classes, Interfaces, Delegates, Events, Structures, Enims and other namespace also.
+
+OOPS : Is basically an Application Design architecture
+
+       Exceution code has to be inside a method/function, which is inside a class
+
+Class: Is a Blueprint that contains fields(datamembers/attributes) and methods (functions that can act on the data)
+     
+
+Object : an instance of a class. That has clear descriptive features and functionalities(Adjectives and Verbs)
+          That describes the data behaviours and the state 
+
+create table tablename(Eid int, ename varchar(40),dob date,gender char(1) )
+
+Data Types : Are basically either 
+1. ValueTypes : All Primitive/Integral/Fundamental/Systemic (char,int,float,long,short,byte,decimal,double)
+                Value types store data directly
+                Value types are stored in stack memory
+
+2. Reference Types : All objects of class,interface,delegate,Arrays etc 
+                     Reference types do not contain data directly, instead, they refer to the memory location where the data is
+                     Reference Types are stored in heap memory
+
+Literals : String , Character, Integer, Real Literals,Null , Boolean 
+
+Integer Literal: 1234
+Character 'a'
+string "esfdghfh"
+Real 34.56
+null : missing / unknown 
+boolean : true/false
+
+
+Conversion of Datatypes :
+
+1. Implicit : smaller type is put into a larger/bigger type
+2. Explicit : a bigger type is put into a smaller type
+
+     Typecasting  or conversion functions
+
+Converting a value type to a reference type : Boxing
+Converting a Reference type to a value type : UnBoxing
+
+a++ = a+1; unary
+
+a+b = binary operator
+
+
+
+
+
