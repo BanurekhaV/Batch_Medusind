@@ -73,6 +73,7 @@ a++ = a+1; unary
 
 a+b = binary operator
 
+a=b?true:false - ternary operator
 
 
 
