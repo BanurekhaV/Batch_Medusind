@@ -1,0 +1,132 @@
+Git : an Open source version control system 
+
+Versions are maintained and managed using Gits snapshots
+
+Git Hub : Is a collective remote repository of all Project codes/softwares 
+
+Local Repository : contains all locally created codes/files etc in a machine -- git init
+
+Remote Repo : A Repo that can contain all the local repo details on the Git Hub
+
+Sync Local Repo with Remote Repo (One local repo maps to only one remote repo) - git remote add <alias name> URL of the remote repo
+
+
+1. Identify a folder where you will be working. Move to that folder
+   git init ( view all the hiiden items and observe a directory/folder called as.git
+1a. Create a new Repo in the Github.com site
+1b. Copy the Https url and sync it with the local repo
+    git remote add <alias name> <copied Url of remote repo>
+2  All created files/folders etc will have to be added to the local repo
+   git add .
+3. All the added contents have tio be committed so that you can transfer all contents to the remore repo
+   git commit -m"meaningful message"
+4. In order to actually transfer the contents
+   git push origin master
+
+git status - to know the status of the repo
+git remote -v - to check the remote url and the alias name
+
+
+Operators:
+Arithemetic
+Relational
+Logical
+Assignment
+Null Coalescing operator ??
+Misc. sizeof, typeof
+
+
+
+Decision making : if, elseif, else  (multiple conditions using logical operators)
+                  switch case   : switch(grade)  - single variable for multiple values
+                                   case 'O' cw(outstanding); break;
+                                   case  'A'
+                                   default :
+
+
+Control Statements: 
+   Iteration Statements: will have 2 components to it
+             1. Initialization
+             2. Condition
+             3. Change of initial value
+
+              While do  : will first check the condition, if true only then it will enter the loop, else exit the loop
+              
+			do while  : will first execute and then check the condition, if true continues the loop, else will exit. Atleast one time the code the executed
+              
+		    for  : like a while loop but very compact
+              
+             foreach : only initialization is required
+   
+   Jump Statement :
+              break
+              continue
+              goto
+              return
+              throw
+
+
+Arrays : Collection of values of the same datatype
+     there are 3 types of arrays
+      1. Single-Dimension
+      2. Two/Multi Dimension
+      3. Jagged Array
+
+int[] arr1= new int[5];
+
+int[]arr1= new int[5]={1,2,3,4,5};
+
+int[]arr1= new int[]={2,4,6,8,10,12};
+arr[0]=1;
+arr[1]=2;  etc..
+
+string[]words=new string[3];
+string[]word=new string[]{"One","Two","Three","Four"};
+        
+
+Array is a class in System namespace
+  supports functions like sort(),reverse().copy() etc and properties like length (gives the size of the elemnets)
+                      Rank -(gives the dimensions of the array)
+
+Two Dimensional :
+int[,] arr2= new int[3,4]{
+    { 1,3,5,7},
+    { 2,4,6,8},
+    { 5,10,15,20}}
+
+jagged Array:
+   int [][] arr3= new int[3][];
+     arr3[0]= new int[]{1,2,3,4};
+     arr3[1]= new int[]{6,8};
+     arr3[2]= new int[]{5,10,15};
+      
+
+
+ASCII - a Character occupies 1 byte of memory (8 bits)
+
+Unicode - a character occupies 2 bytes of memory (16 bits)
+
+
+Implicit Type :  var is a type that can take up any data. We need to assign a value at the time of declaration itself;
+Once assigned, cannot change the type;
+
+Dynamic Type : Remains dynamic and converts only at the runtime. Since it invloves conversion at the runtime, it can slow down the performance of the application. Suggested to avoid too many usages of dynamic
+
+
+Methods and Parameters in C# : 
+1. Value Type ( call by Value)
+2. Reference Type (Call by reference)
+3. Out Parameters (for multiple return values)
+4. Params (Parameter array) - is a keyword that helps in giving a variable number of arguments to a function seperated by a comma,
+   params can provide 0, 1 or many arguments to a function
+   params should ne the last in the method declaration
+   only one params is allowed / function
+
+
+strings : strings are collection of characters
+          Memory is allocated on the Heap
+          Predefined reference type objects
+          Strings are immutable
+          Have fixed size
+          memory cannot be changed dynamically
+

@@ -22,7 +22,20 @@ namespace Day2prj
             //loops.WhileLoop();
             // Console.WriteLine("------------");
             //loops.DoWhileloop();
-            loops.gotoExample();
+           // loops.gotoExample();
+
+            //implicitly typed variable
+            var temp = "Hello";
+            temp = "Hello World";  // can change the values in a var type that matches the assigned type
+                                   // temp = 56.45f; // we cannot chnage the data type
+
+            dynamic d;
+            d = 7;
+            d = 'r';
+            d = "abc";
+            d = 125.5f;
+            d = program;
+            Console.WriteLine(d);
             Console.Read();
         }
 
