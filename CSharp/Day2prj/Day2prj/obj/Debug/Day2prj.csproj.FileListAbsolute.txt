@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\bin\Debug\Day2prj.exe.config
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\bin\Debug\Day2prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\bin\Debug\Day2prj.pdb
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\obj\Debug\Day2prj.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\obj\Debug\Day2prj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\obj\Debug\Day2prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day2prj\Day2prj\obj\Debug\Day2prj.pdb
