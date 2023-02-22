@@ -12,7 +12,7 @@ namespace Day2prj
         {
             Program program = new Program();
             // program.SingleDimension();
-            //program.twoDimension();
+           program.twoDimension();
             // program.jaggedArray();
             ControlClass cc = new ControlClass();
             // cc.checkGrade();
@@ -63,11 +63,11 @@ namespace Day2prj
             Console.WriteLine(arr2[1,0]); //returns 4
 
             //1st loop to track the row
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i <arr2.GetLength(0); i++)
             {
                 Console.Write("Elements at Row " + i + ":");
                 //inner loop to track columns
-                for(int j=0; j < 3;j++)
+                for(int j=0; j < arr2.GetLength(1);j++)
                 {
                     Console.Write(arr2[i,j] +" ");
                 }

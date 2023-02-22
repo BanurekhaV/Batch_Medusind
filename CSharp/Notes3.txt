@@ -1,0 +1,28 @@
+Structures : are user defined value types, that are comparable to classes, but for inheritance
+
+
+Enumerations : Are a set of named constants. Is a user defined value type
+
+
+OOPS : An Architectural style of creating/writing applications
+
+ WYSIWYG ( What you see is what you get)
+
+  - Encapsulation  : Class represented as a unit of data and behaviour(methods)
+  - Abstraction : Hiding internal details and providing only essential details
+  - Inheritance : extension of already existing features/functionalities plus other new features/functionalities
+  - Polymorphism : An object exhibiting different behaviours at different times or differenr object behaving differently to the same given message
+
+class classname { } 
+
+Objects - are constructed instances of a class that abides by the class definition
+
+Class : All the members of the class are by default Private 
+
+Constructors : Are Special Function/s of a class
+               They have the same name as that of the class
+               Assign values to the fields (Initialize with data)
+               Constructors have to be either public or internal
+               Constructors do not have any return type
+               Constructors can be overloaded
+
