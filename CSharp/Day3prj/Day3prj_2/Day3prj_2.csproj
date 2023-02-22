@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{45908868-77D0-4D4F-A757-AF772D107F33}</ProjectGuid>
+    <ProjectGuid>{117875A5-0B62-4AB3-B99A-43F9E31E251C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day3prj</RootNamespace>
-    <AssemblyName>Day3prj</AssemblyName>
+    <RootNamespace>Day3prj_2</RootNamespace>
+    <AssemblyName>Day3prj_2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessSpecifersEg.cs" />
-    <Compile Include="Employee.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Newprogram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Day3prj\Day3prj.csproj">
+      <Project>{45908868-77d0-4d4f-a757-af772d107f33}</Project>
+      <Name>Day3prj</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

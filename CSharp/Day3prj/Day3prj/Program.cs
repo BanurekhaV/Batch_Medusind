@@ -23,8 +23,15 @@ namespace Day3prj
             Employee employee = new Employee();
             employee.ShowEmployee();
             Employee e2 = new Employee(200, "Prema", 40000);
-            //e2.GetEmployee();
-            e2.ShowEmployee();
+          //  e2 = null;
+           // e2.GetEmployee();
+           // GC.Collect();
+             e2.ShowEmployee();
+             Employee e3 = new Employee(500, "Jayanth", 41000, Convert.ToDateTime("09/02/2023"));
+             e3.ShowEmployee();
+
+            AccessSpecifersEg accesseg = new AccessSpecifersEg();
+            accesseg.salary = 1200000;
             Console.Read();
         }
 

@@ -23,9 +23,17 @@ namespace Day3prj
 
         public Employee(int eid,string ename,float esal)   //2 constructor with parameters
         {
-            Empid = eid;
+           this.Empid = eid;
             EmpName = ename;
             EmpSalary = esal;           
+        }
+
+        public Employee(int Emp_id, string EmpName, float EmpSalary,DateTime DOJ)   //2 constructor with parameters
+        {
+            Empid = Emp_id;
+            this.EmpName = EmpName;
+            this.EmpSalary = EmpSalary;
+            this.DOJ =DOJ;
         }
         public void GetEmployee()
         {
@@ -41,6 +49,14 @@ namespace Day3prj
         public void ShowEmployee()
         {
             Console.WriteLine($"Employee Id :{Empid}, Name : {EmpName}, Salary : {EmpSalary} and Date of Joining :{DOJ}");
+            AccessSpecifersEg a = new AccessSpecifersEg();
+            a.salary = 250000;
+        }
+
+        ~Employee()
+        {
+            Console.WriteLine("Bye from Employee");
+            Console.Read();
         }
     }
 }

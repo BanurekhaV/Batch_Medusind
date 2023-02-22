@@ -17,7 +17,11 @@ class classname { }
 
 Objects - are constructed instances of a class that abides by the class definition
 
-Class : All the members of the class are by default Private 
+All Classes are internal by default
+---------------------------------------
+
+Class : All the members of the class are Private by default
+--------------------------------------------------------------
 
 Constructors : Are Special Function/s of a class
                They have the same name as that of the class
@@ -25,4 +29,30 @@ Constructors : Are Special Function/s of a class
                Constructors have to be either public or internal
                Constructors do not have any return type
                Constructors can be overloaded
+               Constructors can be called explicitly
 
+Destructors : Are special function of a class
+              They have the same name as that of the class prefixed with a ~ (tilde)
+              They do not have any return type
+              They cannot be overloaded
+              We cannot expliciltly call a destructor, they are called automatically when the object looses focus
+
+
+Abstraction-Encapsulation: 
+Encapsulation is defined as the process of enclosing one or more items within a physical or a logical package. 
+It prevents access to implementation details
+Encapsulation is implemented by using "access specifiers"
+
+Access Specifiers : Defines the scope and visibility of a class member. 
+
+C# supports the following access specifers:
+
+private : Accessible only within the class where it is declared. Not accessible anywhere else.
+
+public : Are accessible within or outside the assembly. Accessible with or without any derivation. But all we need is an object of that class, whose public members we want to access
+
+protected : 
+
+internal : It acts like a public access within the assembly, and like private outside the assembly
+
+internal protected or protected internal :
