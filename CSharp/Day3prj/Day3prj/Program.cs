@@ -32,6 +32,8 @@ namespace Day3prj
 
             AccessSpecifersEg accesseg = new AccessSpecifersEg();
             accesseg.salary = 1200000;
+            accesseg.info = "Hi";
+            accesseg.val = 56;
             Console.Read();
         }
 

@@ -4,3 +4,4 @@ C:\Banu\Medusind\M_B2\CSharp\Day3prj\Day3prj\bin\Debug\Day3prj.pdb
 C:\Banu\Medusind\M_B2\CSharp\Day3prj\Day3prj\obj\Debug\Day3prj.csproj.CoreCompileInputs.cache
 C:\Banu\Medusind\M_B2\CSharp\Day3prj\Day3prj\obj\Debug\Day3prj.exe
 C:\Banu\Medusind\M_B2\CSharp\Day3prj\Day3prj\obj\Debug\Day3prj.pdb
+C:\Banu\Medusind\M_B2\CSharp\Day3prj\Day3prj\obj\Debug\Day3prj.csproj.AssemblyReference.cache

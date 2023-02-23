@@ -1,0 +1,20 @@
+1. Create a Class Program which would be used to accepts two  Strings - FirstName and LastName and call the static method Display() that displays the first name in one line and the LastName in the second line after converting the same to upper case.
+
+
+2. Create a Program to count the no. of occurrences of a letter in a given string (for example in a string called “OOPS PROGRAMMING”, O appears 3 times)
+Hint : Accept a string and also the letter to be counted
+
+
+3. Create a class called student which has data members like rollno, name, class, Semester, branch, int [] marks=new int marks [5](marks of 5 subjects )
+
+-Pass the details of student like rollno, name, class, semester, branch in constructor
+
+-For marks write a method called GetMarks() and give marks for all 5 subjects
+
+-Write a method called displayresult, which should calculate the average marks
+
+	-If marks of any one subject is less than 35 print result as failed
+	-If marks of all subject is >35 but average is < 50 then also print result as failed
+	-If avg > 50 then print result as passed.
+
+-Write a DisplayData() method to display all student values.

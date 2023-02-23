@@ -1,0 +1,68 @@
+Inheritance : C# provides Single Inheritance, Multilevel Inheritance and Hybrid Inheritance 
+
+Inheritance : "is a"  relationship
+
+  eg : car is a vehicle (vehicle is the base class and car is the derived class)
+
+Aggregation/Composition : "has a" relationship
+
+eg: car has an engine  ( car is class and engine also is a class - one class is contained in another class)
+
+class engine{ double power; string model;}
+
+class car{
+string Brand
+string type;
+double cost;
+engine eng;  
+
+
+public cardata()
+{
+  Brand="BMW";
+  type="SUV"; 
+  cost= 4200000;
+  eng.power=54678;
+  eng.model="2023xx";
+
+}
+}
+
+Polymorphism : Can be achieved using
+  1. Overloading :  is also known as static polymorphism, early binding or compile time polymorphism
+
+     a) Method Overloading : is a concept where we can overload a method with the same name but with different no. of  arguments or different datatype of arguments.(function signature to be different)
+     - Method overloading is always seen within the same class.
+     - Function/Method calls are resolved by the compiler using function signature
+
+     b) Operator overloading: Is overloading any of the Aithemetic,Relational,Logical,assignment operators to work with user defined objects. (Rule : the operator overloaded method should always be public static and the return type has to be the class type where we are writing the method. Should use the operator keyword followed by the operator itself)
+
+  
+
+  2. Overriding : Is seen across base and derived classes. Function signature has to be the same in the child class as that of the base class
+
+CoVariance : A Base class object can be made to point to /Refer to the derived class. 
+   
+- Using the technique of covariance, and virtual override, we can achieve dynamic polymorphism.
+- The compiler does not resolve function calls. 
+- The runtime resolves the function calls (checking the objects current reference)
+
+- Hence we get Dynamic polymorphism/late binding/runtime polymorphism
+
+Types Of Classes:
+-----------------
+Normal class : are the usual classes
+
+Abstract class : Can have both abstract methods and non-abstract methods. Cannot be instantiated. Can be Inherited. A class that has atleast 1 abstract method has to have an abstract modifer
+
+The derived class will have to implement the abstract method/s.
+
+        Abstract Methods are methods that have only declaration and no implementation(definition/body)
+
+Sealed Class: Cannot be inherited, but can be instantiated (Concrete /final class)
+
+Partial Class :
+
+Static Class : Cannot be inherited/instantiated. We can refer to the members with the class name
+
+

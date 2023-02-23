@@ -51,8 +51,8 @@ private : Accessible only within the class where it is declared. Not accessible 
 
 public : Are accessible within or outside the assembly. Accessible with or without any derivation. But all we need is an object of that class, whose public members we want to access
 
-protected : 
+protected : Are accessible to the class where it is declared, and all the derived classes irrespective of being in the same assembly or different assemblies
 
 internal : It acts like a public access within the assembly, and like private outside the assembly
 
-internal protected or protected internal :
+internal protected or protected internal : Internal to all the derived or non-derived classes of the same assembly. Protected to all the derived classes irrespective of the assembly.
