@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\bin\Debug\Day5prj.exe.config
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\bin\Debug\Day5prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\bin\Debug\Day5prj.pdb
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\obj\Debug\Day5prj.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\obj\Debug\Day5prj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\obj\Debug\Day5prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day5prj\Day5prj\obj\Debug\Day5prj.pdb

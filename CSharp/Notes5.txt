@@ -1,0 +1,66 @@
+1. Always the construction starts from the base class and moves down the derived classes, where as destructors work the opposite direction.
+
+2. Hence if a base class has parametrized constructors then the derived class has to also provide a constructor with parameters so as to pass it to the base class.
+
+3. Initializing the base class members through the child class Constructor using :base(arguments)
+
+Interface:
+----------
+- Are like class which can contain methods and properties but only declarations and cannot have fields
+
+- Are public by default, and all members of the interface are also public by default
+- It does not allow any modifiers
+- The class that inherits from the interface has to implement all the methods of the interface
+- A class can inherit from many interfaces
+- Interface can inherit from other interface/s
+- The class that inherits form an interface which inturn inherits from other interface/s, then the class has to implement all the methods of all the interfaces in the chain
+- Interfaces cannot be instantiated
+
+Advantages of Interface: 
+
+ - Is used to achieve loose coupling
+ - is used to achieve abstraction
+ - can be used to build component programming
+ - They add a plug n play like architecture into applications
+
+
+Properties : are named members of the class, strcutures and interfaces
+----------   are extensions of fields in a class.
+             are accessed  using accessors through which private fields can be read, written or manipulated
+             Do not have storage locations
+             are always public and also have the same datatype as that of the field ( Fields are private and properties are public)
+
+
+
+
+Exceptions:
+---------- Are unwanted or unexpected event/s which occur during the execution of the program, and disrupts the normal flow of the program.
+ - It indicates that there is something wrong in the code/logic
+ - Exceptions are classes, which are derived from System.Exception(base class for all the predefined exceptions)
+
+handling of exception :
+  try{} : Instructions/execution code that can lead to exceptions are placed inside the try block. A try block is always followed by one or more catch block, or a finally block. Between try and catch, we cannot have any other execution code
+
+  catch{} - Is a handler of the exception
+
+  finally{} - can have clean up code. Will be executed whether or not there is any exception
+
+  throw - a jump statement using which we can throw exceptions
+
+User Defined Exceptions : All user defined exception classes have to inherit/derive from ApplicationException class
+
+
+Anonymous Types: are types that can hold several implicit types as one.
+
+
+Collection classes : are special classes to store and retrive data.
+                     can hold heterogenous data types
+				  are dynamic in size(i.e no limits)
+
+some common collection classes are :
+
+    ArrayList
+    SortedList
+    Stacks
+    Queues
+    HashTable

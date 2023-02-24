@@ -36,7 +36,7 @@ namespace Day4prj
             Console.WriteLine("Hello Non Abstract");
         }
     }
-    class TypesofClasses :Classabstract
+   partial class TypesofClasses :Classabstract
     {
         static int staticdata = 5;
         string info;
@@ -51,6 +51,9 @@ namespace Day4prj
             TypesofClasses toc = new TypesofClasses();
             toc.Display();
             toc.show();
+
+            PartialMethodEg pme = new PartialMethodEg();
+            pme.newfunc1(5);
             Console.Read();
         }
 
@@ -60,6 +63,16 @@ namespace Day4prj
             Console.WriteLine("Original static data values" + " " + staticdata);
             staticdata = 10;
             Console.WriteLine(staticdata + "  " + "after changes");
+        }
+    }
+
+   partial class PartialMethodEg
+    {
+        partial void func1(int num);
+
+        public string Message()
+        {
+            return "Welcome All to cSharp !!";
         }
     }
 }

@@ -1,0 +1,20 @@
+Strengthning OOPS:
+------------------
+
+1. Create a class called Saledetails which has data members like Salesno,  Productno,  Price, dateofsale, Qty, TotalAmount
+Create a method called Sales() that takes qty, Price details of the object and updates the TotalAmount as Qty *Price
+Pass the other information like SalesNo, Productno, Price,Qty and Dateof sale through constructor
+call the show data method to display the values.
+Hint : Use This pointer
+
+2. Create a class called Scholarship which has int Totalmarks and float fees as fields and a function Public float Merit(int m, float f) that takes Totalmarks and fees as an input.
+ 
+If the given marks is >= 70 and <=80, then calculate scholarship amount as 20% of the fees
+If the given mark is > 80 and <=90, then calculate scholarship amount as 30% of the fees
+If the given mark is >90, then calculate scholarship amount as 50% of the fees.
+In all the cases return the Scholarship amount
+
+
+3. create a class called Person with Name,address as protected fields. Write a constructor to accept(Name and address). Now Create a child class called Doctor with RegnNo, Feescharged, specialization as Private members. Write a constructor to initialize the members and also the members of base class.
+
+

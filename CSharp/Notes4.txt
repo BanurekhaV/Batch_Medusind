@@ -61,8 +61,18 @@ The derived class will have to implement the abstract method/s.
 
 Sealed Class: Cannot be inherited, but can be instantiated (Concrete /final class)
 
-Partial Class :
 
 Static Class : Cannot be inherited/instantiated. We can refer to the members with the class name
+
+Partial Class : Classes that can be defined in multiple files. Multiple developers can work simultaneously
+
+Partial Methods : are methods that can contain declaration in one partial class and definition in another partial class
+
+   Points of importance : Declaration should use partial modifier
+                          Partial methods can contain ref, does not contain out parameter
+                          Implicitly private, can be static
+                          Can have only void as return type
+
+
 
 

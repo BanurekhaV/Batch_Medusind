@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{76A975CD-FF51-4438-BAE6-3D10C9F42011}</ProjectGuid>
+    <ProjectGuid>{D48582CB-DE26-4213-8A61-44CC08D2D3C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Day4prj</RootNamespace>
-    <AssemblyName>Day4prj</AssemblyName>
+    <RootNamespace>Day5prj</RootNamespace>
+    <AssemblyName>Day5prj</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Day4prj.TypesofClasses</StartupObject>
+    <StartupObject>Day5prj.CollectionEg</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,13 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OperatorOverload.cs" />
-    <Compile Include="OverloadEg.cs" />
-    <Compile Include="OverridingEg.cs" />
-    <Compile Include="PartialMethodEg.cs" />
+    <Compile Include="CollectionEg.cs" />
+    <Compile Include="ExceptionEg.cs" />
+    <Compile Include="ICustomer.cs" />
+    <Compile Include="Instantiation_of_Base.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="PropertiesEg.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TypesofClasses.cs" />
+    <Compile Include="UserDefinedExceptionEg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
