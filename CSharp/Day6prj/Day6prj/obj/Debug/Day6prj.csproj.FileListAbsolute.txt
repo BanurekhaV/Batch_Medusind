@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\bin\Debug\Day6prj.exe.config
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\bin\Debug\Day6prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\bin\Debug\Day6prj.pdb
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\obj\Debug\Day6prj.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\obj\Debug\Day6prj.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\obj\Debug\Day6prj.exe
+C:\Banu\Medusind\M_B2\CSharp\Day6prj\Day6prj\obj\Debug\Day6prj.pdb

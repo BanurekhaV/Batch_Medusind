@@ -1,0 +1,39 @@
+Generics : are Datatype templates that allow us to create classes and methods decoupled with datatype
+           is a way that let you define type safe classes without compromising on the 
+                          - type safety
+                          - performance
+                          - productivity
+
+
+Collectios                                        Generics
+-ArrayList									List<>
+-HashTable									Dictionary<>
+-SortedList									SortedList<>
+-Stack										Stack<>
+-Queue										Queue<>
+
+Generics can have constraints set 
+Eg :
+
+class <classname><T> where T: class/struct ( for reference type or value type )
+
+Delegates: Are similar to function pointers of c/c++ etc.. 
+----------
+           Are reference type objects that can hold the reference to a method/function. The refernce can be changed at runtime
+           Are used extensively for implementing call backs and event handling
+           Can point to function whose signature matches the delegate
+
+
+First create/declare a delegate signature
+Can create a public delegate, to access across multiple assemblies
+Create Delegate Object/s and pass the name of the method that matches the delegate's signature
+Call/Invoke the Delegate
+
+
+Multicast Delegates : Are delegate object that can refer to multiple methods. 
+Note : If the methods have return type and we are multicasting the methods with a single delegate object, then we will be able to have only the last methods return value and not the previous methods.
+ 
+
+     
+
+

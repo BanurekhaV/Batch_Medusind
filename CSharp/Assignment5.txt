@@ -1,0 +1,15 @@
+1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which takes grade as an input and checks whether student passed the course or not.  
+
+Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed() method 
+
+For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
+
+
+
+2.  Create an Interface IStudent with int StudentId and string Name as Properties, void ShowDetails() as its method.
+
+-Create 2 classes Dayscholar and Resident that implements the interface Properties and Methods.
+
+- Each class should have its own fields/properties like float fees(Day Scholar - it is 50000/- and for Resident it is 100000/-. 
+
+-ShowDetails() should show DaysScholar details and Resident Details accordingly.

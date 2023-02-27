@@ -59,8 +59,11 @@ Collection classes : are special classes to store and retrive data.
 
 some common collection classes are :
 
-    ArrayList
-    SortedList
-    Stacks
-    Queues
-    HashTable
+    ArrayList : A combination of arrays and list. 
+    SortedList : are like Hash Tables with key and value pairs , but they are sorted
+    Stacks : Last in First Out (LIFO), First in Last Out (FILO)  - push/pop/peek
+    Queues  : First in First Out (FIFO) - enqueu/dequeue
+    HashTable : A key value pair collection. The data in the Hash table gets sorted based on hashing technique.
+ -keys and values can be of different daya types
+ -Keys cannot be null, but values can be
+ -keys cannot be duplicated, but values can be
