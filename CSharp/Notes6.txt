@@ -24,14 +24,20 @@ Delegates: Are similar to function pointers of c/c++ etc..
            Can point to function whose signature matches the delegate
 
 
-First create/declare a delegate signature
-Can create a public delegate, to access across multiple assemblies
-Create Delegate Object/s and pass the name of the method that matches the delegate's signature
-Call/Invoke the Delegate
+-First create/declare a delegate signature
+-Can create a public delegate, to access across multiple assemblies
+-Create Delegate Object/s and pass the name of the method that matches the delegate's signature
+-Call/Invoke the Delegate
 
 
 Multicast Delegates : Are delegate object that can refer to multiple methods. 
 Note : If the methods have return type and we are multicasting the methods with a single delegate object, then we will be able to have only the last methods return value and not the previous methods.
+
+
+Delegates as Function Parameters : A function can have delegates as parameters (where we can pass the target method name that has the matching signature as that of the delegate)
+
+Generic delegates: refer example in Day6prj
+
  
 
      

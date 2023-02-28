@@ -77,6 +77,7 @@ namespace Day6prj
             Console.WriteLine(numbers.Count);
             Console.WriteLine(numbers.Capacity);
 
+            //list initialization
             List<string> colors = new List<string>() { "Red","Blue",
                 "Yellow","Pink","White","Black"};
 

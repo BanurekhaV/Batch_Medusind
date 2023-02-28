@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E7D88DC-292A-4179-B012-FDB1A35744E9}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Day6prj</RootNamespace>
-    <AssemblyName>Day6prj</AssemblyName>
+    <ProjectGuid>{8A6345FD-9C8A-4B62-80D9-B5EADCA7A8E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Library_addons</RootNamespace>
+    <AssemblyName>Library_addons</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,16 +23,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>Day6prj.GenericDelegates</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,18 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllGenericEg.cs" />
-    <Compile Include="DelegatesEg1.cs" />
-    <Compile Include="DelegatesEg2.cs" />
-    <Compile Include="Delegates_as_Parameter.cs" />
-    <Compile Include="GenericDelegates.cs" />
-    <Compile Include="GenericsEg1.cs" />
-    <Compile Include="MulticastDelegate1.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="addOns.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\ExtensionProject\ExtensionProject.csproj">
+      <Project>{fffe30e2-6ee6-411f-8ccc-7a2664158d0a}</Project>
+      <Name>ExtensionProject</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

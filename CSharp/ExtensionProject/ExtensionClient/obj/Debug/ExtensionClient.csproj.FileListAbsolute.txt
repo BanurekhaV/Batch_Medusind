@@ -1,0 +1,12 @@
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\ExtensionClient.exe.config
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\ExtensionClient.exe
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\ExtensionClient.pdb
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\ExtensionProject.dll
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\ExtensionProject.pdb
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\obj\Debug\ExtensionClient.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\obj\Debug\ExtensionClient.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\obj\Debug\ExtensionClient.csproj.CopyComplete
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\obj\Debug\ExtensionClient.exe
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\obj\Debug\ExtensionClient.pdb
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\Library_addons.dll
+C:\Banu\Medusind\M_B2\CSharp\ExtensionProject\ExtensionClient\bin\Debug\Library_addons.pdb

@@ -1,0 +1,46 @@
+Object Initializers : It is a way of initializing the fields/properties without the need for constructors
+
+
+Serialization : is the process of converting object into byte stream so that it can be saved to memory,file or database.
+- The reverse process is known as deserialization
+
+The various classes that support various types of serialization formatting are :
+  1. Binary Formatter       -- namespace(using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;)
+
+  2. Soap Formatter (Simple object access protocol)
+
+  3. XML Formatter               -- namespace (using System.Xml.Serialization;)
+
+  4. JSON Formatter (Javascript Object Notation)    {name/value pair }
+
+
+All classes that support Persistence of Data(permanent storage of data) and serialization are available in System.IO namespace and other respective namespaces
+
+Important Point : We have to provide Metadata/Decorate/Annotate/Provide Attribute to the class object that we plan to serialize as [Serializable]
+
+
+
+<?xml version="1.0" encoding="IBM437"?>
+<XmlSerializationEg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <data1>Hello</data1>
+  <data2>World</data2>
+</XmlSerializationEg>
+
+
+Extensions Methods : Steps :
+1. Create a class library project and add few methods()
+2. Build the project to get the .dll assembly
+3. Create another project of exe type in the same solution
+4. To this project add the reference of the Dll Project
+5. Use it in the file where you want to access the methods
+5.a Set the .exe assembly project as startup project.
+
+You can work with the methods of the dll class using the object of the class
+
+6. Create another class library project (dll)
+7. Add reference to the first dll project, and also use the assembly in the relevant .cs file
+8. Make the class static
+9. Write new methods that also has to be static methods
+10. Pass the First dll class object as an argument to all the newly created static methods prefixed with a this keyword
+11. Build the solution
