@@ -11,7 +11,7 @@ namespace ConnectedArchitecture.DAL
 {
     class DataAccess
     {
-        public static SqlConnection con, con1;
+        public static SqlConnection con;
         public static SqlCommand cmd;
         public static SqlDataReader dr;
 
@@ -37,6 +37,28 @@ namespace ConnectedArchitecture.DAL
                 Console.WriteLine(s.Message);
             }
             return dr;
+        }
+
+        public List<Shippers> readShippers1()
+        {
+            List<Shippers> shiplist = new List<Shippers>();
+            try
+            {
+                con = Data_Connect();
+                cmd = new SqlCommand("select * from  shippers", con);
+                dr = cmd.ExecuteReader();
+              
+                while(dr.Read())
+                {
+                    shiplist.Add(new Shippers { ShipperID = (int)dr[0], CompanyName = (string)dr[1], Phone = (string)dr[2] });
+                }
+              
+            }
+            catch (SqlException s)
+            {
+                Console.WriteLine(s.Message);
+            }
+            return shiplist;
         }
 
         public int EditShippers(Shippers s)

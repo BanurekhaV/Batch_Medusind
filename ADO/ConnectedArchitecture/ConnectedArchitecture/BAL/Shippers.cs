@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using ConnectedArchitecture.DAL;
 using ConnectedArchitecture.UI;
@@ -36,12 +33,16 @@ namespace ConnectedArchitecture.BAL
         //    return
         //}
 
-        public SqlDataReader readShippers()
-        {
-           
-           SqlDataReader sdr =da.readShippers();
-            return sdr;
-        }
+        //public SqlDataReader readShippers()
+        //{           
+        //   SqlDataReader sdr =da.readShippers();
+        //    return sdr;
+        //}
 
+        public List<Shippers> readShippers1()
+        {
+            List<Shippers> shipperlist = da.readShippers1();
+            return shipperlist;
+        }
     }
 }

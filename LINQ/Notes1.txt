@@ -1,0 +1,58 @@
+Disconnected Architecture :
+--------------------------
+
+Connection
+SQLDataAdapter 
+DataSet
+
+LINQ: Language Integrated Query - is a uniform syntax to retrieve data from different data sources and formats viz, collections, objects, Datasets,XML docs, SQL Database and other databases
+
+- It eliminates the mismatches between programming languages and the databases/sources, as well provide a single query interface 
+
+- LINQ queries return results as objects
+- It enables us to use OO approach on the results, and not to worry about transforming different formats to objects
+
+select col1,col2, sum(col3) from tablename
+where condition
+group by col1,col2
+having sum(col3)<  value
+order by col2
+
+order of sql query execution:
+
+1. from
+2. where
+3. group by
+4. having
+5. order by
+6. select
+
+There are 2 types of Linq Query
+
+ 1. Query Expression Syntax / Query Syntax : Similar to SQL Syntax
+
+ 2. Method Syntax / Fluent Syntax / Method Extension Syntax : uses extension methods
+  - Includes Lambda Expression
+
+-Both Query syntax and method syntax do not support all query operators. Some are supported by Query Syntax, while others are supported by Method Syntax
+-Query Syntax is easier to read, but Method syntax is powerful way to write queries
+
+Lambda Expressions :(=>) Also known as Lambda Functions. They are blocks of code that can be assigned to variables, passed as an argument or returned from a function call
+- Has 2 parts. Left side is input part, Right side is expression part
+
+Advantages of LINQ : 1. Less Coding, 2 . Readable Code, 3. Standardised way of querying, 4. Compile time safety of queries,5. Intellisense Support 
+
+
+Linq queries can be either immediate or deferred (default)
+-----------------------------------------------------------
+
+Deferred                                                   vs                        Immediate
+
+-query is not executed at the point of Declaration							Query is executed at the point of its declaration
+-Projection Operators- Select,SelectMany									Aggregation - Count,Avg,sum
+Restriction Operators: Where												Element Operators: First,Last,ToArray,ToList
+Paging Operator :Take,Skip 
+- Lazy Operators														Greedy Operators
+
+-Avoids Unnecessary query execution and hence improves performance
+-Is reevaluated whenever we re-enumerate, thereby getting the latest of data

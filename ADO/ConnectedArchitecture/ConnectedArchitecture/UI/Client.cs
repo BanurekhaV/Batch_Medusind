@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
+
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,12 +20,17 @@ namespace ConnectedArchitecture.UI
            // Console.WriteLine("--------Insert Shipper---------");
             //int row = s.InsertShippers();
             Console.WriteLine();
-            SqlDataReader cdr = s.readShippers();
-            while (cdr.Read())
+            //SqlDataReader cdr = s.readShippers();
+            //while (cdr.Read())
+            //{
+            //    Console.WriteLine(cdr[0]);
+            //    Console.WriteLine(cdr[1]);
+            //    Console.WriteLine(cdr[2]);
+            //}
+            List<Shippers> lstshipper = s.readShippers1();
+            foreach(var item in lstshipper)
             {
-                Console.WriteLine(cdr[0]);
-                Console.WriteLine(cdr[1]);
-                Console.WriteLine(cdr[2]);
+                Console.WriteLine(item.ShipperID + " "+item.CompanyName + " "+ item.Phone);
             }
             Console.Read();
         }
