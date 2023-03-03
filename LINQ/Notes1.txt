@@ -34,6 +34,12 @@ There are 2 types of Linq Query
  2. Method Syntax / Fluent Syntax / Method Extension Syntax : uses extension methods
   - Includes Lambda Expression
 
+Linq- to -collections
+Linq - to -entities
+Linq-to-Sql
+Linq-to-Xml
+Linq-to-Datasets
+
 -Both Query syntax and method syntax do not support all query operators. Some are supported by Query Syntax, while others are supported by Method Syntax
 -Query Syntax is easier to read, but Method syntax is powerful way to write queries
 
@@ -43,7 +49,7 @@ Lambda Expressions :(=>) Also known as Lambda Functions. They are blocks of code
 Advantages of LINQ : 1. Less Coding, 2 . Readable Code, 3. Standardised way of querying, 4. Compile time safety of queries,5. Intellisense Support 
 
 
-Linq queries can be either immediate or deferred (default)
+Linq queries have 2 types of behaviours 1. immediate and 2. deferred (default)
 -----------------------------------------------------------
 
 Deferred                                                   vs                        Immediate
@@ -56,3 +62,4 @@ Paging Operator :Take,Skip
 
 -Avoids Unnecessary query execution and hence improves performance
 -Is reevaluated whenever we re-enumerate, thereby getting the latest of data
+

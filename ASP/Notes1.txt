@@ -1,0 +1,42 @@
+ASP.Net : Is a web Development Platform, that provides comprehensive sw infrastructure and services to build robust web applications: 
+
+PHP, Java, CGI, Ruby on Rails etc...
+   
+www.amazon.in  --  domain name 172.134.2.334   (0-255.0-255.0-255.0-255)  IpV4, Ipv6
+                               172.134.3.1       
+                               172.110.23.67
+
+                           
+DHCP : Dynamic Host Control Protocol
+DNS : Domain Naming System
+Load Balancer
+
+Web Forms/Pages: Every Web Form has a code behind (aspx.cs) designer file(apsx.designer.cs)
+
+As per the w3c. org 
+HTTP : is the standard protocol
+HTML : is the blood of web applications
+
+WebSite :Collection of Web Pages
+WebApplication :Is the logic building Application
+WebServer :That hosts web sites (godaddy)
+AppServer :That host the WebApplication
+
+Web Servers : IIS - Internet Information Services (Microsoft)
+              Apache
+              Websphere
+              JellyFish
+
+LIFE Cycle of a Page : 
+S - Start the Page
+I - Initialization - All Control classes are initialized
+L - Load
+V - Validate
+E - Event Handling
+R - Render Style/Html etc..
+
+
+
+
+     
+                              

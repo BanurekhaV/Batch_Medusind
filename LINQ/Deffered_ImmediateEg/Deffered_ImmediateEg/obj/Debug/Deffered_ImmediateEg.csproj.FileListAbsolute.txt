@@ -1,0 +1,7 @@
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\bin\Debug\Deffered_ImmediateEg.exe.config
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\bin\Debug\Deffered_ImmediateEg.exe
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\bin\Debug\Deffered_ImmediateEg.pdb
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\obj\Debug\Deffered_ImmediateEg.csproj.AssemblyReference.cache
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\obj\Debug\Deffered_ImmediateEg.csproj.CoreCompileInputs.cache
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\obj\Debug\Deffered_ImmediateEg.exe
+C:\Banu\Medusind\M_B2\LINQ\Deffered_ImmediateEg\Deffered_ImmediateEg\obj\Debug\Deffered_ImmediateEg.pdb
