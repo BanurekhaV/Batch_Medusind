@@ -36,6 +36,66 @@ E - Event Handling
 R - Render Style/Html etc..
 
 
+1. PreInit()  -  creates/recreates dynamic controls
+2. Init()   - Is fired after each control is initialized
+3. Init_Complete()   - View State values or any initial values of the controls are made available
+4. On_PagePrelLoad() - loads viewstate and postback data
+5. Load()  -  Actual values are restored
+6. Load_Complete()  - 
+7. OnpreRender()  - All controls and all child controls are getting ready for display
+8. Render() - All the diplay aspects are brought to browser
+9. Unload()  -  Cleanup (page object is disposed)
+
+
+Application Life Cycle :
+
+Application Star()
+Object Creation
+HttpApplication Object
+Dispose
+Application End
+
+Set the Trace to understand the flow of Request/Respone 
+
+Web.Config File
+<System.Web>
+<trace enabled="true">
+
+A file named trace.axd gets created using which we can trace the various events 
+
+StateManagement  :  HTTP is a stateless Protocol  (Cannot store any form/page data)
+
+Client Side Techniques				
+1. ViewState : Is a Dictionary object variable that can store any type of data. Does not need any typecasting.
+               It can manage the state across multiple postbacks of the same page and not other page/s
+
+2. HiddenField : It can also like viewstate manage the state of the page only across multiple postbacks of the same page and not other page/s
+Disadvantage of Hiddenfield:
+
+It is a class with many members. Class has to be initialized. More Load on the System
+
+-- Use Viewstate when you need to store more data, and hiddenfields when few data 
+
+3. Cookies: Manages the state of a page across various other pages. Are of 2 types
+  1. Persistant cookie : is created using an object of httpCookie class. Add the object to the cookies collection and attach it to response object. Retrieve it using request object
+  2. Non Persistant: Is directly added to the response object, and received using request object
+
+4. QueryString : Another client side state management technique that can be made available across different pages
+-it sends the state along the url. hence sensitive data are not to be sent via query string. Only Information/confirmation details can use query string
+URLEncoding is a functionality to overrule any formating in url like % 20
+
+
+Server Side:
+
+1. Session State: is like a viewstate variable, but created and managed at the server
+
+
+2. Application State: applies to all users and sessions. Stored in the HttpApplication object
+
+
+
+
+
 
 
      
