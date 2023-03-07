@@ -1,0 +1,36 @@
+use medusinddb
+
+create table tblProducts
+(
+ID int identity primary key,
+ProductName nvarchar(50),
+ProductDescription nvarchar(max),
+Price float)
+
+insert into tblProducts values('Laptops','HP Inc IntelCore',65000),
+('Desktops','DELL Computers',35000),
+('iPads','Apple Inc',42500),
+('LEDs','Samsung LED Tv',52000)
+
+create or alter procedure spGetProducts as
+begin
+waitfor delay '00:00:05'
+select ID,ProductName,ProductDescription,Price from tblProducts
+end
+
+spGetProducts
+
+create or alter procedure spGetProductByName @ProductName nvarchar(50)
+as
+begin
+if(@ProductName = 'All')
+  begin
+   select ID,ProductName,ProductDescription,Price from tblProducts
+  end
+else
+  begin
+    select ID,ProductName,ProductDescription,Price from tblProducts where ProductName=@ProductName
+  end
+end
+
+spgetproductbyname 'Leds'

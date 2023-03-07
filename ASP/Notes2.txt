@@ -1,0 +1,29 @@
+<%   %>   -- inline expressions for server code
+<%@  Page....%> = Directive Info
+<%=....%> - Data Binding
+
+Button Controls : are responsible for Postback events by default
+DropDown : also can invoke postback events. For this we need to enable the AutoPostBack property
+
+Validations: Are inbuilt controls os ASP.net framework that can validate basic user inputs
+   RequiredField
+   Range
+   RegularExpression
+   Compare
+Custom Validators: Are special controls that can aide in validating business specific validations through code
+
+Validations can be done either at the client side(using Javascripts) or server side
+
+Validation Summary : Is a jist of all input validation errors shown in one place 
+
+Validation Group : Whenever we need to seggregate the errors specific to few controls/fields, we can group the errors under Validation Group
+
+Caching : Is a technique to improve Performance and scalability, by storing the frequently used data/pages in the memory
+
+To cache a webform/page, we use @outputCache Directive
+  - Duration : specifies the time in seconds for which the page is cached
+  - Location : where to cache (client,server,both, remote)
+  - VaryByParam : Caching multiple responses of the same page
+
+
+ 
