@@ -18,6 +18,12 @@ namespace CachingPrj
                 GetProductByName("All");
             }
 
+            // Seting Duration
+            // Response.Cache.SetExpires(DateTime.Now.AddSeconds(30)); 
+            //setting VaryByparam 
+            //Response.Cache.VaryByParams["None"] = true;
+            //setting the location
+            //Response.Cache.SetCacheability(HttpCacheability.ServerAndPrivate);
             lbl1.Text = "This Page is Cached: " + " " + DateTime.Now.ToString();
         }
 

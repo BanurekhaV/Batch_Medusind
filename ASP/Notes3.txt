@@ -1,0 +1,17 @@
+User Controls : are a combination of server or HTML controls on a web user control page. This can be used on other webforms as a single control.
+
+Example : If we need to capture dates on multiple forms, rather than repeating the same HTML markup and the code, on each web form, we can put all of it together in a single web user control, and use it in whichever web form we want. Reusability of code, reduction in development time and ease of maintenence 
+
+DOB, DOJ, StartDate, EndDate, PrjEndDate, DOJourney, DOReturn
+
+Web Forms have .aspx extension                     Webuser control have .ascx extension
+Web Forms have @page directive and html markup	   WebuserControl have @Control directive and ni mark up
+Has Code behind file						   has code behind file
+
+<%@Control ..%> - is a control directive 
+<%@ Register..%> - is Register Directive that is used to register the user control/s that other web forms will be using
+
+Note: Instead of registering in each and every web form. we can register the usercontrol in web.config file once.
+
+Custom controls : Composite Controls, are created completely using code. No tool box support
+

@@ -1,0 +1,42 @@
+ASP.Net MVC : Is a popular Framework for developing web applications
+Is Based on MVC design pattern to create robust,fast,secure web applications
+The next generation technology, and is the successor of ASP.Net Webforms
+
+Features of MVC
+1. Seperation of concerns
+2. It is lightweight, fast, secure and easy maintenance
+3. Designs and code are neatly seperated.
+4. It uses pure HTML controls or Html Helper class(No Server Control)
+5. It uses controller based url routing
+6. No Implementation of Viewstate
+7. It uses Razor Syntax for customization
+8. It uses Layout instead Master Pages for consistent look and feel
+9. It is an open source framework
+
+Model : Is responsible for keeping database/source operational logic - Data
+View  : Is responsible for serving the web page (UI for the client)
+Controller : Is responsible for all Programming/Business Logics
+
+Controller: is the main part of MVC
+Is a mediator between the client request and server response
+Is a bridge between View Page and Model
+It works with HTTP
+Each browser is mapped with the particular controller and each controller has several actionmethods to handle the request
+Urls are mapped only with the controllers
+All controllers must have "Controller" suffix
+
+ActionMethods : All the public methods which are written inside the controller are known as Action Method. Certain Rules to be followed are :
+  Action methods must be public
+  It cannot be overloaded
+  It cannot be a static method
+  Every controller has a default action method known as Index() that returns a view Page
+ActionResult is a base class for all the result type action methods
+
+  ViewResult :  Represents HTML and Razor
+  ContentResult: Represents Text/Html content
+  JsonResult: Represnts Javascript Object Notation result that can be used in AJAX application
+  EmptyResult:Represents no Result
+  RedirectResult: Represents a redirection to a new url
+  RedirectToAction : Not an result type, but works as above
+  JavascriptResult : Represents Javascript
+  FileResult: All File Content with path and streams
