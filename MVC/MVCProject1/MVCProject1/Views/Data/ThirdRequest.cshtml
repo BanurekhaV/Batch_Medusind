@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "ThirdRequest";
+}
+
+<h2>Third Request of Temp Data</h2>
+
+@foreach(var v in TempData["flowers"]as List<string>)
+            {
+                <p>@v</p>
+            }

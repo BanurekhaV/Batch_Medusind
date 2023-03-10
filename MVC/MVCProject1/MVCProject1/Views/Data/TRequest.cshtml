@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "TRequest";
+}
+
+<h2>TRequest</h2>
+
+@foreach(var x in TempData["flowers"] as List<string>)
+            {
+                <ul>
+                    <li>@x</li>
+                </ul>
+            }
+
+<hr/>
+@*@foreach(var p in Model)
+            {
+                <p>@p</p>
+            }*@

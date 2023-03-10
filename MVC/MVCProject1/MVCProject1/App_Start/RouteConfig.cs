@@ -15,8 +15,8 @@ namespace MVCProject1
 
             routes.MapRoute(
                 name: "Medusind",
-                url: "{action}/{controller}/{id}",
-                defaults: new { controller = "Home", action = "Contact", id = UrlParameter.Optional }
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
             routes.MapRoute(

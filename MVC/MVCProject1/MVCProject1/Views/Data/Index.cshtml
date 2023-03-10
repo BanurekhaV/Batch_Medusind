@@ -1,0 +1,11 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var s in TempData["flowers"] as List<string>)
+            {
+                <p>@s</p>
+            }

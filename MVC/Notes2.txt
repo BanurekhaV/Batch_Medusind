@@ -1,0 +1,76 @@
+Views : Is a folder in the MVC structure which contains .cshtml files and design layout
+It keeps seperate folders for each controller and each folder maintains all the .cshtml files
+Are a combination of both the HTML markup and the programming code. The support for both to co-exist is given by Razor engine using Razor syntax
+
+Razor Syntax is a powerful and easiest  way of writing server-based code directly on to the view page
+- is also known as markup syantax that allows Programming code into view page
+- has an extension of .cshtml
+
+Guidelines for using Razor Syntax
+-Use @{...} block to write C# code
+- All the inline expressions like variables and functions starts with @
+- Variables are declared with var keyword, and statements end with a semicolon ;
+- Any string values are kept within double quites " "
+- Comments in Razor is as below
+
+@*
+/*        */
+//
+<!-- HTML  -->
+
+*@
+@model - specifies the model object to aasociate in the view
+@Model - specifies access of the properties of the model
+
+
+Data Movement between The Controller and the View :
+
+ViewBag, ViewData and TempData are used to pass information from Controllers to Views
+
+ViewBag : Dynamic Data Type.
+-Is used to pass data from controllers action method to Views
+-has a short life, meaning once it passes the data to the current view, it becomes null
+-Does not require typecasting
+
+Example :
+ ViewBag.MyData="This is My Data";
+to access the above in the view :
+@ViewBag.MyData
+
+ViewData : Dictionary Object
+-Is used to pass data from controllers action method to Views
+-Stores data as Key-Value Pairs
+-has a short life, meaning once it passes the data to the current view, it becomes null
+-Requires Typecasting for complex data types
+-Is Derived from ViewDataDictionary
+
+Example :
+
+ViewData["Mydata"]="Hello World";
+to access the above in the view
+@ViewData["Mydata"]
+
+
+TempData: Dictionary Object
+-It internally uses Session to store data
+-Tempdata is kept alive between subsequent requests using a function called kepp()
+-Is Derived from TempDataDictionary
+-Has Life bigger than Viewbag and ViewData
+
+while Tempdata is used to pass information ffrom controller to views(of the same controller), it is mostly used to transfer data from one controller to another controller.
+-Most usage is when we want to redirect to another view(page) and also want to tag some data to it, the we can use tempdata
+
+EntityFramework : ORM Framework (Object Relational mapper)
+-Open Source
+-Cross Platform
+-Linq based Quries
+-Keeps track of changes that happen to the objects and hence needs to be updated back in the database
+-Saving() function of EF executes Insert/Update/Delete
+
+3 approaches to EF
+ 1. Database First - Existing database
+ 2. Code First  - No Database, but we will create a database using the codes of FrontEnd application
+ 3. Model First - No Database. No Code. Only designers.( Create scripts to convert the design to databases objects)
+
+
+

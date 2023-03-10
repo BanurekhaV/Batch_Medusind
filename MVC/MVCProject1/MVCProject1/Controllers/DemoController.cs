@@ -29,6 +29,7 @@ namespace MVCProject1.Controllers
         }
 
         //3. Empty Result
+        [NonAction]
         public EmptyResult Empty()
         {
             int amount = 45000;
