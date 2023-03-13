@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DatabaseFirstPrj.Models.Order>
+@{
+    ViewBag.Title = "MultiData";
+}
+
+<h2>Multi Tables Data</h2>
+@foreach(var item in Model)
+            {
+                <ul typeof="none">
+                    <li>Order ID : @item.OrderID</li>
+                    <li>Customer Name:@item.Customer.ContactName</li>
+                    <li>Employee FirstName :@item.Employee.FirstName</li>
+                    <li>Shippers Company :@item.Shipper.CompanyName</li>
+                </ul>
+            }
+

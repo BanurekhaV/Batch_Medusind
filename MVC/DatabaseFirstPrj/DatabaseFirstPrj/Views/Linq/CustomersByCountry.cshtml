@@ -1,0 +1,14 @@
+﻿@model IEnumerable<DatabaseFirstPrj.Models.Customer>
+@{
+    ViewBag.Title = "CustomersByCountry";
+}
+
+<h2>CustomersByCountry</h2>
+@foreach(var item in Model)
+            {
+                <ul>
+                    <li>@item.ContactName</li>
+                    <li>@item.City</li>
+                    <li>@item.Country</li>
+                </ul>
+            }

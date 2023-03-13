@@ -1,0 +1,35 @@
+Entity Framework:
+
+Life Cycle : 1. Added, 2. Modified, Deleted, Detached, Unchanged
+
+The namespace System.Data.Entity contains classes which provide access to the core functionality of EF. It also enables to perform CRUD using CLR Strongly Typed Objects
+
+Types of Entities:
+
+1. POCO entities (Plain Old CLR Object) : A POCo Entity is a class that does not depend on any framework specific base class. It is like any other normal .Net CLR class
+
+2. Dynamic Proxy entity(POCO Proxy) : A runtime proxy class which wraps POCO Entity. This allows Lazy Loading
+
+EF Context: Is a class that represents the entire database Schema as domain specific Objects. These Objects are represented as DBSets
+
+DBSets: is a collection of all entity related information  that can be queried / manipulated to effect the original source 
+
+CRUD : 
+TO pass the Information/Data from a view to a controller, we can use the below 4 ways
+1. Model Object
+2. Passing as arguments/parameters
+3. Request Object
+4. Forms Collection
+
+
+Code First Approach : Domain Specific classes, that can be mapped to the tables of a non-existing database (we have to even create the database from scratch)
+
+at the PMConsole >enable-migrations       -- only the first time when we need to allow migrations
+
+2. pm>add-migration "<meaningfulname>"
+
+3. pm>update-database -v (verbose, that displays the actual execution while updating)
+
+Any Changes made at the application level and we want the changes to be updated at the backend, then we will call for step 2 and 3
+
+

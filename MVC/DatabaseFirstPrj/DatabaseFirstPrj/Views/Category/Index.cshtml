@@ -1,0 +1,18 @@
+﻿@model IEnumerable<DatabaseFirstPrj.Models.Category>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach(var c in Model)
+            {
+                <ul style="color:blueviolet">
+                    <li>@c.CategoryID</li>
+                    <li>@c.CategoryName</li>
+                    <li>@c.Description</li>
+                    <li>@c.Picture</li>
+                </ul>
+            }
